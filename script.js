@@ -25,7 +25,7 @@ saveData();
 let span = document.createElement('span');
 span.innerHTML = "X";
 newList.appendChild(span);
-
+saveData();
 
 }
 });
@@ -55,4 +55,5 @@ function saveData(){
 function retrieveData() {
     taskList.innerHTML= localStorage.getItem("data");
 }
+
 retrieveData()
